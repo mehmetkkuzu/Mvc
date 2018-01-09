@@ -50,7 +50,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal
             {
                 options.FormatterMappings.SetMediaTypeMappingForFormat(
                     key,
-                    MediaTypeHeaderValue.Parse("application/xml"));
+                    MediaTypeHeaderValues.ApplicationXml);
             }
 
             options.ModelMetadataDetailsProviders.Add(new SuppressChildValidationMetadataProvider("System.Xml.Linq.XObject"));

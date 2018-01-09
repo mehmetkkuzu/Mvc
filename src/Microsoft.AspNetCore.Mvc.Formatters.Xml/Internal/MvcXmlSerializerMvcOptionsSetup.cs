@@ -43,7 +43,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters.Xml.Internal
             {
                 options.FormatterMappings.SetMediaTypeMappingForFormat(
                     key,
-                    MediaTypeHeaderValue.Parse("application/xml"));
+                    MediaTypeHeaderValues.ApplicationXml);
             }
 
             options.OutputFormatters.Add(new XmlSerializerOutputFormatter(_loggerFactory));
